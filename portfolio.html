@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:whitesmoke;
+    color:#333;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:darkcyan;
+    padding:30px;
+    position:sticky;
+    width:100%;
+    top:0;
+}
+header h1{
+    color:white;
+    font-size:22px;
+    letter-spacing:2px;
+}
+.nav-links{
+    list-style:none;
+}
+.nav-links li{
+    display:inline-block;
+    padding:0px 15px;
+}
+
+.nav-links li a{
+    text-decoration:none;
+    color:beige;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:cyan;
+}
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:120px 80px;
+    scroll-margin-top:0px;
+}
+.Home{
+    padding:225px;
+    background-color:beige;
+    font-size:40px;
+    align-items:center;
+}
+.Home h1{
+    margin-bottom:15px;
+    color: darkcyan;
+}
+.Home p{
+    margin-bottom:25px;
+}
+.Home button{
+    padding:12px 25px;
+    border:none;
+    background-color:darkcyan;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.Home button:hover{
+    background-color:#00646a;
+    color:black;
+}
+.About{
+    background-color:beige;
+}
+.About-box{
+    background-color:darkcyan;
+    padding:100px;
+    border-radius:15px;
+    max-width:85%;
+    text-align:center;
+}
+.About h1{
+    color:beige;
+    font-size:45px;
+    margin-bottom:30px;
+}
+.About p{
+    font-size:19px;
+    line-height:1.9;
+    margin-bottom:20px;
+    color:black;
+}
+.skills{
+    background-color:beige;
+}
+.skills-box{
+    background-color:darkcyan;
+    padding:150px;
+    border-radius:15px;
+    width:85%;
+    text-align:center;
+}
+.skills h1{
+    font-size:45px;
+    margin-bottom:30px;
+    color:beige;
+}
+.skills ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    list-style:none;
+}
+
+.skills li{
+    background-color:whitesmoke;
+    color:darkcyan;
+    padding:14px 28px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+}
+.projects{
+    background-color:beige;
+}
+.project-box{
+    background-color:darkcyan;
+    padding:50px;
+    border-radius:15px;
+    max-width:85%;
+    text-align:center;
+}
+
+.projects h1{
+    font-size:45px;
+    color:beige;
+    margin-bottom:30px;
+}
+.projects h3{
+    font-size:24px;
+    color:black;
+    margin-bottom:25px;
+}
+.projects p{
+    font-size:19px;
+    line-height:1.9;
+    margin-bottom:20px;
+    color:white;
+}
+.Education{
+    background-color:beige;
+}
+.education-box{
+    background-color:darkcyan;
+    padding:50px;
+    border-radius:15px;
+    width:85%;
+    text-align:center;
+}
+.Education h1{
+    font-size:45px;
+    margin-bottom:35px;
+    color:beige;
+}
+.Education h4{
+    font-size:26px;
+    margin-top:25px;
+    color:black;
+}
+.Education h5{
+    font-size:18px;
+    font-weight:normal;
+    margin-top:10px;
+    color:whitesmoke;
+}
+.Contact{
+    background-color:beige;
+}
+.contact-box{
+    background-color:darkcyan;
+    padding:50px;
+    border-radius:15px;
+    width:85%;
+    text-align:center;
+}
+.Contact h1{
+    font-size:45px;
+    margin-bottom:35px;
+    color:whitesmoke;
+}
+.Contact h4{
+    font-size:20px;
+    margin-bottom:20px;
+    color:black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+.Contact h4 i{
+    color:beige;
+    margin-right:10px;
+    font-size:26px;
+    vertical-align:middle;
+}
+.Contact h4 a{
+    text-decoration: none;
+    cursor: pointer;
+    color:black
+}
+.Contact h4 a:hover{
+    color:beige;
+}
+.Contact ul h4 li{
+    list-style: none;
+}
+
+footer{
+    background-color:darkcyan;
+    color:beige;
+    text-align:center;
+    padding:20px;
+    font-size:16px;
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </header>
+    <section id="home" class="Home">
+        <h1>Hello,I'm Deepalakshmi</h1>
+        <p>Student | Aspiring Data Analyst</p>
+        <a href="#contact"><button type="submit">Contact</button></a>
+    </section>
+    <section id="about" class="About">
+        <div class="About-box">
+        <h1>ABOUT ME</h1>
+        <p>I am a passionate Data Science student with a strong interest in Data Analysis, Machine Learning,
+             and Web Development.I enjoy learning modern technologies and applying my skills to create useful 
+             and impactful projects.</p>
+        <p>As a fresher, I am continuously improving my knowledge in programming, problem-solving and 
+            front-end development using HTML and CSS. I am eager to gain experience, explore new ideas, 
+            and grow as a technology professional.</p>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="skills-box">
+        <h1>SKILLS</h1>
+        <ul>
+            <li>Python</li>
+            <li>Sql</li>
+            <li>Mongodb</li>
+            <li>Basic Html</li>
+            <li>Basic Css</li>
+        </ul>
+        </div>
+    </section>
+    <section id="project" class="projects">
+        <div class="project-box">
+        <h1>PROJECTS</h1>
+            <h3>HOUSE PRICE PREDICTION USING AI & ML</h3>
+            <p>Built a machine learning regression model to predict house prices 
+             using property-related features like area, location, and number of rooms.
+             Applied data preprocessing, feature engineering, and model evaluation techniques 
+             to improve prediction accuracy.
+        </p>
+          <h3>INTERN PERFORMANCE PREDICTION USING AI & ML</h3>
+            <p>Developed an AI & ML Intern Performance Prediction System using the Random Forest algorithm
+               to predict intern performance. Built a responsive website using HTML, CSS, JavaScript, 
+               and Flask for real-time prediction results. Used factors like attendance, internal marks, lab performance, 
+               and task completion rate for performance analysis.
+        </p>
+        </div>
+    </section>
+    <section id="Education" class="Education">
+        <div class="education-box">
+        <h1>EDUCATION</h1>
+        <h4>M.Sc DataScience</h4>
+        <h5>Holy Cross College (Autonomous),Trichy. </h5>
+        <h4>B.Sc Mathematics</h4>
+        <h5>Holy Cross College (Autonomous),Trichy. </h5>
+        </div>
+    </section>
+    <section id="contact" class="Contact">
+        <div class="contact-box">
+        <h1>CONTACT</h1>
+        <ul>
+        <h4>
+             <li><i class='bx bxl-gmail'></i>
+            deepavaiyauri12@gmail.com</li></h4>
+            <h4>
+            <li><i class='bx bxl-linkedin-square'></i>
+            <a href="https://www.linkedin.com/in/deepalakshmi-v-005304408/">www.linkedin.com/in/deepalakshmi-v</a></li>
+        </h4>
+        </ul>
+        </div>
+    </section>
+    <footer>
+         <p>© 2026 Deepalakshmi. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
